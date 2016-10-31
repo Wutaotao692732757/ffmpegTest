@@ -1,14 +1,16 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +18,71 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vst-l2-JEu">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="OF9-SU-gkl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7i-fa-YhL">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMH-R6-qlq">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="DK2-2b-4KW"/>
+                                    <constraint firstAttribute="height" constant="30" id="uVw-aV-1iB"/>
+                                </constraints>
+                                <state key="normal" title="play"/>
+                                <connections>
+                                    <action selector="playButtonDidClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zB8-WJ-ouU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TbJ-jq-etL">
+                                <state key="normal" title="Timer"/>
+                                <connections>
+                                    <action selector="TimerCilicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yzz-Nb-ISb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B78-hC-iPV">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="B78-hC-iPV" firstAttribute="centerY" secondItem="TbJ-jq-etL" secondAttribute="centerY" id="1Qb-y9-aIU"/>
+                            <constraint firstItem="p7i-fa-YhL" firstAttribute="height" secondItem="yMH-R6-qlq" secondAttribute="height" id="2JC-h5-cja"/>
+                            <constraint firstItem="vst-l2-JEu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="5UL-hq-q3s"/>
+                            <constraint firstItem="p7i-fa-YhL" firstAttribute="centerY" secondItem="yMH-R6-qlq" secondAttribute="centerY" id="Ekv-7g-YHv"/>
+                            <constraint firstItem="p7i-fa-YhL" firstAttribute="leading" secondItem="yMH-R6-qlq" secondAttribute="trailing" constant="107" id="Fmp-vl-eU6"/>
+                            <constraint firstItem="TbJ-jq-etL" firstAttribute="height" secondItem="yMH-R6-qlq" secondAttribute="height" id="HNr-yU-2n0"/>
+                            <constraint firstItem="TbJ-jq-etL" firstAttribute="leading" secondItem="yMH-R6-qlq" secondAttribute="leading" id="KO0-Hh-AY7"/>
+                            <constraint firstAttribute="trailing" secondItem="vst-l2-JEu" secondAttribute="trailing" id="Lnj-2T-FOx"/>
+                            <constraint firstItem="TbJ-jq-etL" firstAttribute="width" secondItem="yMH-R6-qlq" secondAttribute="width" id="Lzg-ey-yML"/>
+                            <constraint firstItem="yMH-R6-qlq" firstAttribute="top" secondItem="vst-l2-JEu" secondAttribute="bottom" constant="27" id="Osz-jn-R62"/>
+                            <constraint firstItem="TbJ-jq-etL" firstAttribute="top" secondItem="yMH-R6-qlq" secondAttribute="bottom" constant="14" id="U7w-2I-ksb"/>
+                            <constraint firstItem="vst-l2-JEu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aiX-Ey-bhM"/>
+                            <constraint firstItem="yMH-R6-qlq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="13" id="j4o-fk-Hpu"/>
+                            <constraint firstItem="p7i-fa-YhL" firstAttribute="width" secondItem="yMH-R6-qlq" secondAttribute="width" multiplier="2" id="j9W-9E-rUT"/>
+                            <constraint firstItem="B78-hC-iPV" firstAttribute="width" secondItem="TbJ-jq-etL" secondAttribute="width" multiplier="2" id="poo-Gd-av4"/>
+                            <constraint firstItem="B78-hC-iPV" firstAttribute="height" secondItem="TbJ-jq-etL" secondAttribute="height" id="sJ6-1W-GXI"/>
+                            <constraint firstItem="B78-hC-iPV" firstAttribute="leading" secondItem="TbJ-jq-etL" secondAttribute="trailing" constant="107" id="vhi-Ls-YhU"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="VideoImageView" destination="vst-l2-JEu" id="yg8-Zt-OX0"/>
+                        <outlet property="flpLabel" destination="p7i-fa-YhL" id="oNr-Ej-nDd"/>
+                        <outlet property="playBtn" destination="yMH-R6-qlq" id="2K1-Vq-74p"/>
+                        <outlet property="timeLabel" destination="B78-hC-iPV" id="8ef-fb-QVp"/>
+                        <outlet property="timerBtn" destination="TbJ-jq-etL" id="W20-Nr-7wy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="79" y="38"/>
         </scene>
     </scenes>
 </document>

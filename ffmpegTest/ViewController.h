@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#include "avformat.h"
 
 @interface ViewController : UIViewController
 
