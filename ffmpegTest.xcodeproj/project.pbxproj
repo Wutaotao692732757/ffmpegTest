@@ -29,6 +29,18 @@
 		005A84AC1DC09E1B00893FE2 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 005A84AB1DC09E1B00893FE2 /* libbz2.tbd */; };
 		005A84AE1DC09E2800893FE2 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 005A84AD1DC09E2800893FE2 /* libiconv.tbd */; };
 		00FB9FE21DC2E5B600843288 /* WTMoiveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FB9FE11DC2E5B600843288 /* WTMoiveObject.m */; };
+		EA324FD01DDE86B900A5B86B /* output.raw in Resources */ = {isa = PBXBuildFile; fileRef = EA324FCF1DDE86B900A5B86B /* output.raw */; };
+		EA32514E1DDE90C100A5B86B /* voicetest.c in Sources */ = {isa = PBXBuildFile; fileRef = EA32514C1DDE90C100A5B86B /* voicetest.c */; };
+		EA3251521DDE968F00A5B86B /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3251511DDE968F00A5B86B /* GameController.framework */; };
+		EA3251541DDE969D00A5B86B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3251531DDE969D00A5B86B /* AudioToolbox.framework */; };
+		EA3251561DDE96AC00A5B86B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3251551DDE96AC00A5B86B /* QuartzCore.framework */; };
+		EA3251581DDE96B600A5B86B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3251571DDE96B600A5B86B /* OpenGLES.framework */; };
+		EA32515A1DDE96C900A5B86B /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3251591DDE96C900A5B86B /* CoreAudio.framework */; };
+		EA32515C1DDE96D000A5B86B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA32515B1DDE96D000A5B86B /* UIKit.framework */; };
+		EA32515E1DDE96D800A5B86B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA32515D1DDE96D800A5B86B /* Foundation.framework */; };
+		EA3251B71DDE98B900A5B86B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3251B61DDE98B900A5B86B /* CoreMotion.framework */; };
+		EA3D33CE1DDD946200EE4DEA /* WTVoiceObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3D33CD1DDD946200EE4DEA /* WTVoiceObject.m */; };
+		EA3D33D11DDDA93300EE4DEA /* testVideo.c in Sources */ = {isa = PBXBuildFile; fileRef = EA3D33CF1DDDA93300EE4DEA /* testVideo.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -183,6 +195,21 @@
 		005A84AD1DC09E2800893FE2 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		00FB9FE01DC2E5B600843288 /* WTMoiveObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMoiveObject.h; sourceTree = "<group>"; };
 		00FB9FE11DC2E5B600843288 /* WTMoiveObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMoiveObject.m; sourceTree = "<group>"; };
+		EA324FCF1DDE86B900A5B86B /* output.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = output.raw; sourceTree = "<group>"; };
+		EA32514C1DDE90C100A5B86B /* voicetest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = voicetest.c; sourceTree = "<group>"; };
+		EA32514D1DDE90C100A5B86B /* voicetest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = voicetest.h; sourceTree = "<group>"; };
+		EA3251511DDE968F00A5B86B /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
+		EA3251531DDE969D00A5B86B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EA3251551DDE96AC00A5B86B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EA3251571DDE96B600A5B86B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		EA3251591DDE96C900A5B86B /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		EA32515B1DDE96D000A5B86B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EA32515D1DDE96D800A5B86B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EA3251B61DDE98B900A5B86B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		EA3D33CC1DDD946200EE4DEA /* WTVoiceObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTVoiceObject.h; sourceTree = "<group>"; };
+		EA3D33CD1DDD946200EE4DEA /* WTVoiceObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTVoiceObject.m; sourceTree = "<group>"; };
+		EA3D33CF1DDDA93300EE4DEA /* testVideo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = testVideo.c; sourceTree = "<group>"; };
+		EA3D33D01DDDA93300EE4DEA /* testVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testVideo.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +217,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA3251B71DDE98B900A5B86B /* CoreMotion.framework in Frameworks */,
+				EA32515E1DDE96D800A5B86B /* Foundation.framework in Frameworks */,
+				EA32515C1DDE96D000A5B86B /* UIKit.framework in Frameworks */,
+				EA32515A1DDE96C900A5B86B /* CoreAudio.framework in Frameworks */,
+				EA3251581DDE96B600A5B86B /* OpenGLES.framework in Frameworks */,
+				EA3251561DDE96AC00A5B86B /* QuartzCore.framework in Frameworks */,
+				EA3251541DDE969D00A5B86B /* AudioToolbox.framework in Frameworks */,
+				EA3251521DDE968F00A5B86B /* GameController.framework in Frameworks */,
 				005A84AE1DC09E2800893FE2 /* libiconv.tbd in Frameworks */,
 				005A84AC1DC09E1B00893FE2 /* libbz2.tbd in Frameworks */,
 				005A84AA1DC09E0900893FE2 /* libz.tbd in Frameworks */,
@@ -248,6 +283,10 @@
 		005A836D1DC0943300893FE2 /* ffmpegTest */ = {
 			isa = PBXGroup;
 			children = (
+				EA32514D1DDE90C100A5B86B /* voicetest.h */,
+				EA32514C1DDE90C100A5B86B /* voicetest.c */,
+				EA3D33CC1DDD946200EE4DEA /* WTVoiceObject.h */,
+				EA3D33CD1DDD946200EE4DEA /* WTVoiceObject.m */,
 				00FB9FE01DC2E5B600843288 /* WTMoiveObject.h */,
 				00FB9FE11DC2E5B600843288 /* WTMoiveObject.m */,
 				005A83711DC0943300893FE2 /* AppDelegate.h */,
@@ -258,7 +297,10 @@
 				005A837A1DC0943300893FE2 /* Assets.xcassets */,
 				005A837C1DC0943300893FE2 /* LaunchScreen.storyboard */,
 				005A837F1DC0943300893FE2 /* Info.plist */,
+				EA324FCF1DDE86B900A5B86B /* output.raw */,
 				005A836E1DC0943300893FE2 /* Supporting Files */,
+				EA3D33CF1DDDA93300EE4DEA /* testVideo.c */,
+				EA3D33D01DDDA93300EE4DEA /* testVideo.h */,
 			);
 			path = ffmpegTest;
 			sourceTree = "<group>";
@@ -292,6 +334,14 @@
 		005A84231DC09B3600893FE2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA3251B61DDE98B900A5B86B /* CoreMotion.framework */,
+				EA32515D1DDE96D800A5B86B /* Foundation.framework */,
+				EA32515B1DDE96D000A5B86B /* UIKit.framework */,
+				EA3251591DDE96C900A5B86B /* CoreAudio.framework */,
+				EA3251571DDE96B600A5B86B /* OpenGLES.framework */,
+				EA3251551DDE96AC00A5B86B /* QuartzCore.framework */,
+				EA3251531DDE969D00A5B86B /* AudioToolbox.framework */,
+				EA3251511DDE968F00A5B86B /* GameController.framework */,
 				005A84AD1DC09E2800893FE2 /* libiconv.tbd */,
 				005A84AB1DC09E1B00893FE2 /* libbz2.tbd */,
 				005A84A91DC09E0900893FE2 /* libz.tbd */,
@@ -602,6 +652,7 @@
 			files = (
 				005A837E1DC0943300893FE2 /* LaunchScreen.storyboard in Resources */,
 				005A837B1DC0943300893FE2 /* Assets.xcassets in Resources */,
+				EA324FD01DDE86B900A5B86B /* output.raw in Resources */,
 				005A83791DC0943300893FE2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -630,7 +681,10 @@
 				005A83761DC0943300893FE2 /* ViewController.m in Sources */,
 				00FB9FE21DC2E5B600843288 /* WTMoiveObject.m in Sources */,
 				005A83731DC0943300893FE2 /* AppDelegate.m in Sources */,
+				EA32514E1DDE90C100A5B86B /* voicetest.c in Sources */,
+				EA3D33D11DDDA93300EE4DEA /* testVideo.c in Sources */,
 				005A83701DC0943300893FE2 /* main.m in Sources */,
+				EA3D33CE1DDD946200EE4DEA /* WTVoiceObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -781,6 +835,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = DENKXY2C62;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FFmpeg-iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				HEADER_SEARCH_PATHS = "FFmpeg-iOS/include";
 				INFOPLIST_FILE = ffmpegTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
@@ -817,8 +876,9 @@
 					"$(PROJECT_DIR)/FFmpeg-iOS/scratch/x86_64/libavutil",
 					"$(PROJECT_DIR)/FFmpeg-iOS/scratch/x86_64/libswresample",
 					"$(PROJECT_DIR)/FFmpeg-iOS/scratch/x86_64/libswscale",
+					"$(PROJECT_DIR)/FFmpeg-iOS",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = wtt.GPUImage;
+				PRODUCT_BUNDLE_IDENTIFIER = "wtt.GPUImage--wtt";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -829,6 +889,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = DENKXY2C62;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FFmpeg-iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				HEADER_SEARCH_PATHS = "FFmpeg-iOS/include";
 				INFOPLIST_FILE = ffmpegTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
@@ -865,8 +930,9 @@
 					"$(PROJECT_DIR)/FFmpeg-iOS/scratch/x86_64/libavutil",
 					"$(PROJECT_DIR)/FFmpeg-iOS/scratch/x86_64/libswresample",
 					"$(PROJECT_DIR)/FFmpeg-iOS/scratch/x86_64/libswscale",
+					"$(PROJECT_DIR)/FFmpeg-iOS",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = wtt.GPUImage;
+				PRODUCT_BUNDLE_IDENTIFIER = "wtt.GPUImage--wtt";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

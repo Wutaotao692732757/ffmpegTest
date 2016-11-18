@@ -10,4 +10,14 @@
 
 @interface WTVoiceObject : NSObject
 
+@property(nonatomic,copy) NSString *videoPath;
+
+@property(nonatomic,strong) NSTimer *timer;
+
+-(int )playerVideo;
+
+-(void)playVideoFromFile;
+
+-(void)stopTheVideo;
+
 @end
