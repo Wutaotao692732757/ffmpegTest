@@ -7,12 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PCMPlayer.h"
 
 @interface WTVoiceObject : NSObject
 
 @property(nonatomic,copy) NSString *videoPath;
 
 @property(nonatomic,strong) NSTimer *timer;
+@property(nonatomic,assign) NSInteger index;
+@property(nonatomic,strong)NSMutableData *mutableData;
+
+@property (nonatomic,strong) PCMPlayer *pcmplayer;
 
 -(int )playerVideo;
 

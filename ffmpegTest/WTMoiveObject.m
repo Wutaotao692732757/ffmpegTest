@@ -18,9 +18,7 @@
 
 #define OUTPUT_PCM 1
 //Use SDL
-#define USE_SDL 1
-
-
+//#define USE_SDL 1
 
 static  Uint8  *audio_chunk;
 static  Uint32  audio_len;
@@ -148,6 +146,7 @@ initError:
     
     int frameFinished =0;
     while (!frameFinished && av_read_frame(WTFormatCtx, &packet) >=0) {
+        
         frameFinished = avcodec_send_packet(WTCodecCtx, &packet);
         if (videoStream < 0 && videoStream != AVERROR(EAGAIN) && videoStream != AVERROR_EOF)
          {
@@ -157,7 +156,7 @@ initError:
         if (packet.stream_index==videoStream) {
             
             //            avcodec_decode_video2(WTCodecCtx, WTFrame, &frameFinished, &packet);
-            
+
             //            //从解码器返回解码输出数据
             frameFinished = avcodec_receive_frame(WTCodecCtx, WTFrame);
             if (videoStream < 0 && videoStream != AVERROR_EOF)
@@ -265,12 +264,14 @@ initError:
 
 
 
-
 - (UIImage *)imageFromAVPicture
 {
     //        AV_PIX_FMT_YUV420P
     //        avpicture_free(&picture);
-//    SWS_FAST_BILINEAR
+//    SWS_FAST_BILINEAR  SWS_BILINEAR
+    
+    
+    
     
     avpicture_free(&picture);
     avpicture_alloc(&picture, AV_PIX_FMT_RGB24, _outputWidth, _outputHeight);
@@ -280,11 +281,19 @@ initError:
                                                        _outputWidth,
                                                        _outputHeight,
                                                        AV_PIX_FMT_RGB24,
-                                                       SWS_FAST_BILINEAR,
+                                                       SWS_BICUBIC,
                                                        NULL,
                                                        NULL,
                                                        NULL);
+    
     if(imgConvertCtx == nil) return nil;
+//     picture.data,
+    
+    if (!WTFrame){
+        
+        return nil;
+    }
+    
     sws_scale(imgConvertCtx,
               WTFrame->data,
               WTFrame->linesize,

@@ -29,13 +29,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    self.videoPlayer = [[WTMoiveObject alloc] initWithVideo:@"rtsp://192.168.42.1/live"];
+//    AudioStreamEngine *stream = [AudioStreamEngine sharedInstance];
+//    [stream setupStream];
+//    [stream startWithURL:@"rtsp://192.168.42.1/live"];
+    
+    
+    
+    self.videoPlayer = [[WTMoiveObject alloc] initWithVideo:@"rtsp://192.168.42.1/live"];
     
     _voicePlayer=[[WTVoiceObject alloc]init];
     _voicePlayer.videoPath=@"rtsp://192.168.42.1/live";
     [_voicePlayer playerVideo];
+//    [_voicePlayer playerVideo];
     
-//    [_videoPlayer playWithImageView:_VideoImageView];
+
+    
+    
+    [_videoPlayer playWithImageView:_VideoImageView];
    
     //    1、rtsp://184.72.239.149/vod/mp4://BigBuckBunny_175k.mov
     //    一段动画片
@@ -56,15 +66,16 @@
 
 - (IBAction)stopbtnDidClicked:(id)sender {
    
-//    [_videoPlayer StopPlay];
+    [_videoPlayer StopPlay];
     
     [_voicePlayer stopTheVideo];
 }
 
 - (IBAction)continueBtnDidClicked:(id)sender {
     
-    [_voicePlayer playVideoFromFile];
-//      [_videoPlayer PlayerContinue];
+    
+//    [_voicePlayer playVideoFromFile];
+      [_videoPlayer PlayerContinue];
     
 }
 

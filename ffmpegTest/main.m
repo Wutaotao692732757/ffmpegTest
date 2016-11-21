@@ -10,11 +10,10 @@
 #import "AppDelegate.h"
 #import "WTVoiceObject.h"
 
+
 int main(int argc, char * argv[]) {
     @autoreleasepool {
-        NSString* appClass = @"WTVoiceObject";
-        NSString* delegateClass = nil;
-        int retVal = UIApplicationMain(argc, argv, appClass, delegateClass);
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+   
+                return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }
