@@ -29,6 +29,7 @@
 		005A84AC1DC09E1B00893FE2 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 005A84AB1DC09E1B00893FE2 /* libbz2.tbd */; };
 		005A84AE1DC09E2800893FE2 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 005A84AD1DC09E2800893FE2 /* libiconv.tbd */; };
 		00FB9FE21DC2E5B600843288 /* WTMoiveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FB9FE11DC2E5B600843288 /* WTMoiveObject.m */; };
+		6E4FF0251F05292C00E487F1 /* WTVoiceObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4FF0241F05292C00E487F1 /* WTVoiceObject.m */; };
 		EA324FD01DDE86B900A5B86B /* output.raw in Resources */ = {isa = PBXBuildFile; fileRef = EA324FCF1DDE86B900A5B86B /* output.raw */; };
 		EA3251521DDE968F00A5B86B /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3251511DDE968F00A5B86B /* GameController.framework */; };
 		EA3251541DDE969D00A5B86B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3251531DDE969D00A5B86B /* AudioToolbox.framework */; };
@@ -42,7 +43,6 @@
 		EA32554B1DDEE52200A5B86B /* SDL_config.h.cmake in Resources */ = {isa = PBXBuildFile; fileRef = EA3255031DDEE52200A5B86B /* SDL_config.h.cmake */; };
 		EA32554C1DDEE52200A5B86B /* SDL_config.h.in in Resources */ = {isa = PBXBuildFile; fileRef = EA3255041DDEE52200A5B86B /* SDL_config.h.in */; };
 		EA3255531DDEFCC400A5B86B /* PCMPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3255521DDEFCC400A5B86B /* PCMPlayer.m */; };
-		EA3D33CE1DDD946200EE4DEA /* WTVoiceObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3D33CD1DDD946200EE4DEA /* WTVoiceObject.m */; };
 		EAE3F4311DE2DFEE0027410F /* AACDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE3F4301DE2DFEE0027410F /* AACDecode.m */; };
 /* End PBXBuildFile section */
 
@@ -198,6 +198,8 @@
 		005A84AD1DC09E2800893FE2 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		00FB9FE01DC2E5B600843288 /* WTMoiveObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMoiveObject.h; sourceTree = "<group>"; };
 		00FB9FE11DC2E5B600843288 /* WTMoiveObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMoiveObject.m; sourceTree = "<group>"; };
+		6E4FF0231F05292C00E487F1 /* WTVoiceObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTVoiceObject.h; sourceTree = "<group>"; };
+		6E4FF0241F05292C00E487F1 /* WTVoiceObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTVoiceObject.m; sourceTree = "<group>"; };
 		EA324FCF1DDE86B900A5B86B /* output.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = output.raw; sourceTree = "<group>"; };
 		EA3251511DDE968F00A5B86B /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
 		EA3251531DDE969D00A5B86B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -292,8 +294,6 @@
 		EA32554A1DDEE52200A5B86B /* SDL_video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDL_video.h; sourceTree = "<group>"; };
 		EA3255511DDEFCC400A5B86B /* PCMPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCMPlayer.h; sourceTree = "<group>"; };
 		EA3255521DDEFCC400A5B86B /* PCMPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCMPlayer.m; sourceTree = "<group>"; };
-		EA3D33CC1DDD946200EE4DEA /* WTVoiceObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTVoiceObject.h; sourceTree = "<group>"; };
-		EA3D33CD1DDD946200EE4DEA /* WTVoiceObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTVoiceObject.m; sourceTree = "<group>"; };
 		EAE3F42F1DE2DFEE0027410F /* AACDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AACDecode.h; sourceTree = "<group>"; };
 		EAE3F4301DE2DFEE0027410F /* AACDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AACDecode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -374,8 +374,8 @@
 				EAE3F4301DE2DFEE0027410F /* AACDecode.m */,
 				EA3255511DDEFCC400A5B86B /* PCMPlayer.h */,
 				EA3255521DDEFCC400A5B86B /* PCMPlayer.m */,
-				EA3D33CC1DDD946200EE4DEA /* WTVoiceObject.h */,
-				EA3D33CD1DDD946200EE4DEA /* WTVoiceObject.m */,
+				6E4FF0231F05292C00E487F1 /* WTVoiceObject.h */,
+				6E4FF0241F05292C00E487F1 /* WTVoiceObject.m */,
 				00FB9FE01DC2E5B600843288 /* WTMoiveObject.h */,
 				00FB9FE11DC2E5B600843288 /* WTMoiveObject.m */,
 				005A83711DC0943300893FE2 /* AppDelegate.h */,
@@ -860,11 +860,11 @@
 			files = (
 				EAE3F4311DE2DFEE0027410F /* AACDecode.m in Sources */,
 				005A83761DC0943300893FE2 /* ViewController.m in Sources */,
+				6E4FF0251F05292C00E487F1 /* WTVoiceObject.m in Sources */,
 				00FB9FE21DC2E5B600843288 /* WTMoiveObject.m in Sources */,
 				005A83731DC0943300893FE2 /* AppDelegate.m in Sources */,
 				EA3255531DDEFCC400A5B86B /* PCMPlayer.m in Sources */,
 				005A83701DC0943300893FE2 /* main.m in Sources */,
-				EA3D33CE1DDD946200EE4DEA /* WTVoiceObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
